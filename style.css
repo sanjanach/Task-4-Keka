@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+}
+
+.page-container{
+    margin: 0;
+}
+
+.page-header{
+    background-color: rgb(51,153,204);
+    height: 88px;
+}
+
+.page-title{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    padding: 20px 0px 33px 20px;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.navbar{
+    background-color: rgb(51,51,51);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    height: 28px;
+    margin-bottom: 17px;
+}
+
+.nav-list{
+    margin: 0;
+    padding-left: 12px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list-item{
+    height: 28px;
+}
+
+.nav-list-item a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 9px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+#nav-careers a{
+    border-left: 4px solid white;
+    padding-top:7px;
+    padding-bottom: 6px;
+    color: black;
+    background-color: rgb(255, 153, 0);
+}
+
+a:active{
+    border-left: 4px solid white;
+    padding-top:7px;
+    padding-bottom: 6px;
+    color: black;
+    background-color: rgb(255, 153, 0);
+}
+
+.blog-icon{
+    position: absolute;
+    right: 30px;
+}
+
+.home-info{
+    margin: 18px 920px 0px 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(173, 167, 167);
+    width: 575px;
+}
+
+.home-info, .home-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home-title{
+    padding-left: 10px;
+    font-size: 16px;
+    padding-top: 0px;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin-left: 2px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.home-list{
+    margin-top: 7px;
+    font-size: 11px; 
+    font-weight: 500;
+    padding-left: 22px;
+    list-style-type: '-';
+    margin-bottom: 2px;
+}
+
+.home-list-item{
+    padding-left: 5px;
+    padding-bottom: 14px;
+}
+
+.home-content-info-middle{
+    margin-right: 20px;
+    font-size: 12px;
+
+}
+
+.home-content{
+    margin: 20px 590px 0px 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.home-content-title{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.home-content-info{
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.page-careers{
+    padding-left: 48px;
+}
+
+.careers-title{
+    font-weight: 500;
+    margin-top:14px;
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.careers-info, .label, .browse-btn, .submit, .contact-form{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.careers-info{
+    font-size: 13px;
+    white-space: pre-line;
+}
+
+.careers-form{
+    padding-left: 69px;
+    margin-top: 35px;
+}
+
+.form-table{
+    display: table;
+    border-spacing: 23px 13px;
+}
+
+.form-row{
+    display: table-row;
+}
+
+.label, .input-text{
+    margin-bottom: 7px;
+    display: table-cell;
+}
+
+.input-text{
+    height: 17px;
+    margin-top: 8px;
+    width: 140px;
+    margin-left: 16px;
+}
+
+.browse-btn{
+    margin-left: 8px;
+    font-size: 12px;
+    height: 23px;
+    font-weight: 600;
+    width: 77px;
+}
+
+.submit{
+    font-size: 12px;
+    height: 23px;
+    font-weight: 600;
+    width: 77px;
+    margin-top: 9px;
+}
+
+.form-info-text{
+    white-space: pre-line;
+    margin: 0;
+}
+
+.textarea{
+    margin-top: 5px;
+    overflow-y: scroll;
+
+}
+
+#NameError, #EmailError,#org-error, #RoleError, #cname-error{
+    color: red;
+    padding-left: 1px;
+}
+
+.contact-form{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+#GetFile{
+    visibility: hidden;
+}
+
+.radio-btn{
+    white-space: pre-line;
+}
+
+.opt-info{
+    white-space: pre-line;
+    font-weight: 200;
+}
+
+#OnSubmit{
+    padding-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-weight: 600;
+}

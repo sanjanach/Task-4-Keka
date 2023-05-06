@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">Technovert</h1>
+        </div>
+
+        <div class="navbar">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="home.html">Home</a></li>
+                <li class="nav-list-item"><a href="#">Services</a></li>
+                <li class="nav-list-item" id="nav-careers"><a href="careers.html">Careers</a></li>
+                <li class="nav-list-item"><a href="contact.html">Contact</a></li>
+                <img class="blog-icon" src="blog-icon.png" alt="icon">
+            </ul> 
+        </div>
+
+        <div class="page-careers">
+            <h2 class="careers-title">Careers at Technovert</h2>
+            <p class="careers-info">We are looking for smart people who love fiddling with code and pour their heart into it. If you are one, we would like to talk to you. Please fill 
+                the form below and we will get back to you.</p>
+        </div>
+            
+        <span id="OnSubmit"></span>
+            <form name="formDetails" class="careers-form" onsubmit="return validateCareerSubmit()">
+                <div class="form-table" >
+                    <div class="form-row">
+                        <label class="label" for="name">Name</label>
+                        <input class="input-text" type="text" name="formName" id="CareersName" onkeyup="validateName(); validateInputFeilds()">
+                        <span id="NameError">*</span>
+                    </div>
+                    <div class="form-row">
+                        <label class="label" for="email">Email</label>
+                        <input class="input-text" type="text" name="formEmail" id="CareersEmail" onkeyup="validateEmail(); validateInputFeilds()">
+                        <span><span id="EmailError">*</span>
+                    </div>
+                    <div class="form-row">
+                        <label class="label" for="role">Desired Role</label>
+                        <input class="input-text" name="formInput" type="text" id="CareersRole" onkeyup="validateText(); validateInputFeilds()">
+                        <span><span id="RoleError">*</span>
+                    </div>
+                    <div class="form-row">
+                        <label class="label" for="resume">Upload Resume</label>
+                        <input id="FileUpload" class="input-text" name="fresume" type="text">
+                        <button class="browse-btn" onclick="document.getElementById('GetFile').click()">Browse...</button>
+                        <input  onchange="getFileName()" type="file" name="getfile" id="GetFile">
+                        <span id="ResumeError"></span>
+                    </div>
+                    <div>
+                        <span><input class="submit" type="submit" value="Submit" onclick="return validateCareerSubmit()">
+                    </div>
+                </div>
+            </form>
+    </div>
+</body>
+</html>

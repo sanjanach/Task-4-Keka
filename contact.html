@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">Technovert</h1>
+        </div>
+
+        <div class="navbar">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="home.html">Home</a></li>
+                <li class="nav-list-item"><a href="#">Services</a></li>
+                <li class="nav-list-item"><a href="careers.html">Careers</a></li>
+                <li class="nav-list-item" id="nav-careers"><a href="contact.html">Contact</a></li>
+                <img class="blog-icon" src="blog-icon.png" alt="icon">
+            </ul> 
+        </div>
+
+        <span id="OnSubmit"></span>
+        <form id="ContactForm" name="formDetails" class="contact-form" onsubmit="return validateContactSubmit()">
+            <div class="form-table">
+                
+                <div class="form-row">
+                    <label class="label" for="gender">Gender</label>
+                    <input type="radio" name="male" id="male-gender" onchange="alert('Hello Sir');">
+                    <label for="male-gender">Male</label>
+                    <input type="radio" name="male" id="female-gender" onchange="alert('Hello Lady');">
+                    <label for="female-gender"> Female</label>
+                </div>
+                <div class="form-row">
+                    <label class="label" for="name">My Name:</label>
+                    <input class="input-text" id="GetName" name="formName" type="text" onkeyup="validateName(); validateInputFeilds()">
+                    <span id="NameError">*</span>
+                </div>
+                <div class="form-row">
+                    <label class="label" for="">My Email Address:</label>
+                    <input class="input-text" type="text" name="formEmail" id="GetEmail" onkeyup="validateEmail(); validateInputFeilds()">
+                    <td><span id="EmailError">*</span>
+                </div>
+                <div class="form-row">
+                    <label class="label" for="telephone">My Telephone Number:</label>
+                    <input class="input-text" type="text" name="" id="">
+                </div>
+                <div class="form-row">
+                    <label class="label" for="organization">My Organization Name:</label>
+                    <input class="input-text" type="text" name="formInput" id="GetOrg" onkeyup="validateText(); validateInputFeilds()">
+                    <span id="RoleError">*</span>
+                </div>
+                <div class="form-row">
+                    <label class="label" for="city">My City:</label>
+                    <input class="input-text" type="text" name="" id="">
+                </div>
+                <div class="form-row">
+                    <label class="label" for="state">My State or Province</label>
+                    <select class="input-text" onchange="getPromoCode()" name="stateOrProvince" id="StateProvince">
+                        <option  value="">Select State or Province</option>
+                        <option value="">Andhra Pradesh</option>
+                        <option value="">Arunachal Pradesh</option>
+                        <option value="">Bihar</option></select>
+                </div>
+                <div class="form-row">
+                    <label class="label" for="contact">Please Contact Me By: </label>
+                    <input class="radio-btn" type="radio" name="contact" id="EmailBtn">
+                    <label for="EmailBtn">Email</label>
+                    <input type="radio" name="contact" id="PhoneBtn">
+                    <label for="PhoneBtn">Phone</label>
+                    <input type="radio" name="contact" id="BothBtn">
+                    <label for="BothBtn">Both</label>
+                </div>
+                <div class="form-row">
+                    <label class="label" >Promotion Code: </label>
+                    <input class="input-text" name="promo" id="PromoCode" type="text">
+                </div>
+            </div>
+            
+                <p class="opt-info">Optional Information: 
+                <em>This information is optional but it helps to serve you better.</em>
+                </p>
+                    
+            <div class="form-table">
+                <div class="form-row">
+                        <label class="label"  for="address">My Website Address is:</label>
+                        <input class="input-text" type="text" name="" id="">
+                </div>
+            </div>
+            <label class="form-info" for="">Tell Us More About Your Organization: </label>
+            <p class="form-info-text"><textarea class="textarea" name="" id="" cols="40" rows="7"></textarea>
+            <label class="form-info" for="">What I'd Really Like To Know Is:</label>
+            <textarea class="textarea" name="" id="" cols="40" rows="7"></textarea></p>
+            
+            <div class="form-row">
+                <div>
+                    <input  id="submit-btn" type="submit" onkeyup=" return validateContactSubmit()" onclick="return validateContactSubmit()"  value="Send Message">
+                    <input type="button" id="clearForm" value="Clear Form" onclick="resetForm()">
+                </div>
+            </div>
+        </div>
+        </form>
+</body>
+</html>
